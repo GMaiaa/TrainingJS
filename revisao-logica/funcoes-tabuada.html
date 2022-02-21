@@ -23,6 +23,9 @@
             let numero = parseFloat(prompt("Digite um número"))
             let msg = ""
             for(let i = 0; i <= 1000; i++ ){
+                if(i === 10 ){
+                    break 
+                }
                 msg += `${i} x ${numero} = ${ i * numero} <br> `
             
             }
@@ -33,6 +36,8 @@
         function limparTabuada(){
                 output.innerHTML = ""
             }
+
+         
             
         
     </script>
